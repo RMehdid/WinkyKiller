@@ -8,18 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		FBB369DD2BAC307C00888AC2 /* WinkyKillerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB369DC2BAC307C00888AC2 /* WinkyKillerApp.swift */; };
-		FBB369DF2BAC307C00888AC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB369DE2BAC307C00888AC2 /* ContentView.swift */; };
+		FBB369DF2BAC307C00888AC2 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB369DE2BAC307C00888AC2 /* StartView.swift */; };
 		FBB369E12BAC307D00888AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB369E02BAC307D00888AC2 /* Assets.xcassets */; };
 		FBB369E52BAC307D00888AC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB369E42BAC307D00888AC2 /* Preview Assets.xcassets */; };
+		FBB369ED2BAC30D000888AC2 /* RoleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB369EC2BAC30D000888AC2 /* RoleCard.swift */; };
+		FBB369F12BAC330000888AC2 /* Amarante-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBB369F02BAC330000888AC2 /* Amarante-Regular.ttf */; };
+		FBB369F52BAC346100888AC2 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB369F42BAC346100888AC2 /* Role.swift */; };
+		FBB369F72BAC375300888AC2 /* WKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB369F62BAC375300888AC2 /* WKButton.swift */; };
+		FBB369F92BAC39DE00888AC2 /* RoleSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB369F82BAC39DE00888AC2 /* RoleSelectionRow.swift */; };
+		FBB369FC2BAC426E00888AC2 /* RoleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB369FB2BAC426E00888AC2 /* RoleManager.swift */; };
+		FBB369FF2BAC65F100888AC2 /* RoleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB369FE2BAC65F100888AC2 /* RoleRow.swift */; };
+		FBB36A032BAC78D400888AC2 /* PlayersNumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB36A022BAC78D400888AC2 /* PlayersNumView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FBB369D92BAC307C00888AC2 /* WinkyKiller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WinkyKiller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB369DC2BAC307C00888AC2 /* WinkyKillerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinkyKillerApp.swift; sourceTree = "<group>"; };
-		FBB369DE2BAC307C00888AC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBB369DE2BAC307C00888AC2 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		FBB369E02BAC307D00888AC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBB369E22BAC307D00888AC2 /* WinkyKiller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WinkyKiller.entitlements; sourceTree = "<group>"; };
 		FBB369E42BAC307D00888AC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBB369EC2BAC30D000888AC2 /* RoleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleCard.swift; sourceTree = "<group>"; };
+		FBB369F02BAC330000888AC2 /* Amarante-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amarante-Regular.ttf"; sourceTree = "<group>"; };
+		FBB369F22BAC332500888AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FBB369F42BAC346100888AC2 /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		FBB369F62BAC375300888AC2 /* WKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKButton.swift; sourceTree = "<group>"; };
+		FBB369F82BAC39DE00888AC2 /* RoleSelectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionRow.swift; sourceTree = "<group>"; };
+		FBB369FB2BAC426E00888AC2 /* RoleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleManager.swift; sourceTree = "<group>"; };
+		FBB369FE2BAC65F100888AC2 /* RoleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleRow.swift; sourceTree = "<group>"; };
+		FBB36A022BAC78D400888AC2 /* PlayersNumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersNumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +69,13 @@
 		FBB369DB2BAC307C00888AC2 /* WinkyKiller */ = {
 			isa = PBXGroup;
 			children = (
+				FBB369FD2BAC65CF00888AC2 /* Views */,
+				FBB369FA2BAC425F00888AC2 /* Service */,
+				FBB369F22BAC332500888AC2 /* Info.plist */,
+				FBB369EE2BAC32E800888AC2 /* Resources */,
+				FBB369EB2BAC309800888AC2 /* Components */,
 				FBB369DC2BAC307C00888AC2 /* WinkyKillerApp.swift */,
-				FBB369DE2BAC307C00888AC2 /* ContentView.swift */,
+				FBB369F32BAC344A00888AC2 /* Models */,
 				FBB369E02BAC307D00888AC2 /* Assets.xcassets */,
 				FBB369E22BAC307D00888AC2 /* WinkyKiller.entitlements */,
 				FBB369E32BAC307D00888AC2 /* Preview Content */,
@@ -67,6 +89,58 @@
 				FBB369E42BAC307D00888AC2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBB369EB2BAC309800888AC2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FBB369EC2BAC30D000888AC2 /* RoleCard.swift */,
+				FBB369F62BAC375300888AC2 /* WKButton.swift */,
+				FBB369F82BAC39DE00888AC2 /* RoleSelectionRow.swift */,
+				FBB369FE2BAC65F100888AC2 /* RoleRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FBB369EE2BAC32E800888AC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FBB369EF2BAC32F100888AC2 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FBB369EF2BAC32F100888AC2 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				FBB369F02BAC330000888AC2 /* Amarante-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		FBB369F32BAC344A00888AC2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBB369F42BAC346100888AC2 /* Role.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBB369FA2BAC425F00888AC2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FBB369FB2BAC426E00888AC2 /* RoleManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FBB369FD2BAC65CF00888AC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBB369DE2BAC307C00888AC2 /* StartView.swift */,
+				FBB36A022BAC78D400888AC2 /* PlayersNumView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB369F12BAC330000888AC2 /* Amarante-Regular.ttf in Resources */,
 				FBB369E52BAC307D00888AC2 /* Preview Assets.xcassets in Resources */,
 				FBB369E12BAC307D00888AC2 /* Assets.xcassets in Resources */,
 			);
@@ -139,8 +214,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBB369DF2BAC307C00888AC2 /* ContentView.swift in Sources */,
+				FBB369DF2BAC307C00888AC2 /* StartView.swift in Sources */,
 				FBB369DD2BAC307C00888AC2 /* WinkyKillerApp.swift in Sources */,
+				FBB369FF2BAC65F100888AC2 /* RoleRow.swift in Sources */,
+				FBB36A032BAC78D400888AC2 /* PlayersNumView.swift in Sources */,
+				FBB369F92BAC39DE00888AC2 /* RoleSelectionRow.swift in Sources */,
+				FBB369ED2BAC30D000888AC2 /* RoleCard.swift in Sources */,
+				FBB369F52BAC346100888AC2 /* Role.swift in Sources */,
+				FBB369F72BAC375300888AC2 /* WKButton.swift in Sources */,
+				FBB369FC2BAC426E00888AC2 /* RoleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +356,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WinkyKiller/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,6 +395,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WinkyKiller/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

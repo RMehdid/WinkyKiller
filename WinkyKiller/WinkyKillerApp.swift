@@ -11,7 +11,9 @@ import SwiftUI
 struct WinkyKillerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                StartView()
+            }
         }
     }
 }
