@@ -7,26 +7,14 @@
 
 import Foundation
 
-protocol Role {
-    var value: String { get }
-}
-
-protocol Playable: Role { }
-
-enum Required: String, Playable, CaseIterable {
+enum Role: String {
+    case player = "Player"
     case simple = "Simple"
     case killer = "Killer"
-    
-    var value: String { return self.rawValue }
-}
-
-enum Optional: String, Playable, CaseIterable {
     case dame = "Dame"
     case snitch = "Snitch"
     
-    var value: String { return self.rawValue }
-}
-
-class NonPlayable: Role {
-    var value = "Player"
+    static var required: [Role] = [.simple, .killer]
+    
+    static var optional: [Role] = [.dame, .snitch]
 }

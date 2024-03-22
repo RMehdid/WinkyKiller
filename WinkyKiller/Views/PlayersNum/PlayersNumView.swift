@@ -20,7 +20,8 @@ struct PlayersNumView: View {
                 Text("How many are you?")
                     .font(.custom("Amarante-Regular", size: 32))
                 
-                TextField("Enter here", text: $playersNum)
+                TextField("Number of players", text: $playersNum)
+                    .keyboardType(.numberPad)
                     .focused($playersNumFieldIsFocused)
                     .fixedSize(horizontal: true, vertical: true)
                     .padding(4)
@@ -36,7 +37,7 @@ struct PlayersNumView: View {
             Spacer()
             
             NavigationLink("Confirm") {
-                RoleCard(Required.killer)
+                RoleCard(.killer)
             }
             .buttonStyle(PrimaryButton())
         }

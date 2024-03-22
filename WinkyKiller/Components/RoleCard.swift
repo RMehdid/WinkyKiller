@@ -17,11 +17,11 @@ struct RoleCard: View {
     
     var body: some View {
         VStack {
-            Image(role.value)
+            Image(role.rawValue)
                 .resizable()
                 .scaledToFit()
             
-            Text(role.value)
+            Text(role.rawValue)
                 .font(.custom("Amarante-Regular", size: 32))
         }
         .padding()
@@ -43,5 +43,5 @@ struct RoleCard: View {
 }
 
 #Preview {
-    RoleCard(Required.killer)
+    RoleCard(.killer)
 }

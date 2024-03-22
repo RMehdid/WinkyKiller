@@ -7,34 +7,45 @@
 
 import Foundation
 
-class RoleManager: ObservableObject {
+class RoleManager {
     
-    @Published var allRoles = [Playable]()
+    private var allRoles = [Role]()
+    
+    private var totalPlayers: Int
     private var remainingPlayers: Int
     
     init(numberOfPlayers: Int) {
-        remainingPlayers = numberOfPlayers
-        assignRoles(numberOfPlayers: numberOfPlayers)
+        self.totalPlayers = numberOfPlayers
+        self.remainingPlayers = numberOfPlayers
     }
     
-    private func assignRoles(numberOfPlayers: Int) {
-        // Calculate number of killers, snitches, dames, and simples
-        let numKillers = numberOfPlayers / 5
-        let numSnitches = min(1, numberOfPlayers)
-        let numDames = min(1, numberOfPlayers)
-        let numSimples = numberOfPlayers - numKillers - numSnitches - numDames
+    func generateRoles(roles: [Role]) {
         
-        // Create an array of all roles
-        allRoles = Array(repeating: Required.simple, count: numSimples)
-        allRoles += Array(repeating: Required.killer, count: numKillers)
-        allRoles += Array(repeating: Optional.dame, count: numDames)
-        allRoles += Array(repeating: Optional.snitch, count: numSnitches)
+        let numKillers = totalPlayers / 5
+        allRoles += Array(repeating: .killer, count: numKillers)
+        
+        var numSnitches = 0
+        var numDames = 0
+        
+        if roles.contains(where: { $0 == .dame}) {
+            numDames = 1
+            allRoles += Array(repeating: .dame, count: numDames)
+        }
+        
+        if roles.contains(where: { $0 == .snitch}) {
+            numSnitches = 1
+            allRoles += Array(repeating: .snitch, count: numSnitches)
+        }
+        
+        let numSimples = totalPlayers - numKillers - numSnitches - numDames
+
+        allRoles = Array(repeating: .simple, count: numSimples)
         
         // Shuffle the roles
         allRoles.shuffle()
     }
     
-    func generateRoleForNextPlayer() -> Playable? {
+    func getRoleForPlayer() -> Role? {
         guard remainingPlayers > 0 else {
             print("All players have already generated their roles.")
             return nil

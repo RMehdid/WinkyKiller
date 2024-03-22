@@ -13,7 +13,7 @@ struct StartView: View {
             Spacer()
             
             NavigationLink("Start") {
-                RoleCard(Required.killer)
+                RoleCard(.killer)
             }
             .buttonStyle(PrimaryButton())
         }

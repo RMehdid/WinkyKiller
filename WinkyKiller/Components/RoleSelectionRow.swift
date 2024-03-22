@@ -13,16 +13,21 @@ struct RoleSelectionRow: View {
     
     private let role: Role
     
-    init(_ role: Role) {
+    private var didSet: (Bool) -> Void
+    
+    init(_ role: Role, didSet: @escaping (Bool) -> Void) {
         self.role = role
+        self.didSet = didSet
     }
     
     var body: some View {
         Button {
             self.isSelected.toggle()
+            
+            didSet(isSelected)
         } label: {
             HStack(spacing: 16){
-                Image(role.value)
+                Image(role.rawValue)
                     .resizable()
                     .scaledToFit()
                     .padding(4)
@@ -41,9 +46,9 @@ struct RoleSelectionRow: View {
                             )
                     }
                 
-                    Text(role.value + "s")
-                        .font(.custom("Amarante-Regular", size: 32))
-                        .foregroundStyle(.white)
+                Text(role.rawValue)
+                    .font(.custom("Amarante-Regular", size: 32))
+                    .foregroundStyle(.white)
                 
                 Spacer()
             }
@@ -66,5 +71,7 @@ struct RoleSelectionRow: View {
 }
 
 #Preview {
-    RoleSelectionRow(Optional.dame)
+    RoleSelectionRow(.dame) { role in
+        
+    }
 }

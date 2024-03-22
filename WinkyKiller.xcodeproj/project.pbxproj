@@ -19,6 +19,7 @@
 		FBB369FC2BAC426E00888AC2 /* RoleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB369FB2BAC426E00888AC2 /* RoleManager.swift */; };
 		FBB369FF2BAC65F100888AC2 /* RoleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB369FE2BAC65F100888AC2 /* RoleRow.swift */; };
 		FBB36A032BAC78D400888AC2 /* PlayersNumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB36A022BAC78D400888AC2 /* PlayersNumView.swift */; };
+		FBB36A072BAD240400888AC2 /* RoleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB36A062BAD240400888AC2 /* RoleSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		FBB369FB2BAC426E00888AC2 /* RoleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleManager.swift; sourceTree = "<group>"; };
 		FBB369FE2BAC65F100888AC2 /* RoleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleRow.swift; sourceTree = "<group>"; };
 		FBB36A022BAC78D400888AC2 /* PlayersNumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersNumView.swift; sourceTree = "<group>"; };
+		FBB36A062BAD240400888AC2 /* RoleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +139,35 @@
 		FBB369FD2BAC65CF00888AC2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FBB369DE2BAC307C00888AC2 /* StartView.swift */,
-				FBB36A022BAC78D400888AC2 /* PlayersNumView.swift */,
+				FBB36A042BAD1C0E00888AC2 /* Start */,
+				FBB36A052BAD1C1700888AC2 /* PlayersNum */,
+				FBB36A082BAD241900888AC2 /* RoleSelecion */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FBB36A042BAD1C0E00888AC2 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				FBB369DE2BAC307C00888AC2 /* StartView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		FBB36A052BAD1C1700888AC2 /* PlayersNum */ = {
+			isa = PBXGroup;
+			children = (
+				FBB36A022BAC78D400888AC2 /* PlayersNumView.swift */,
+			);
+			path = PlayersNum;
+			sourceTree = "<group>";
+		};
+		FBB36A082BAD241900888AC2 /* RoleSelecion */ = {
+			isa = PBXGroup;
+			children = (
+				FBB36A062BAD240400888AC2 /* RoleSelectionView.swift */,
+			);
+			path = RoleSelecion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB36A072BAD240400888AC2 /* RoleSelectionView.swift in Sources */,
 				FBB369DF2BAC307C00888AC2 /* StartView.swift in Sources */,
 				FBB369DD2BAC307C00888AC2 /* WinkyKillerApp.swift in Sources */,
 				FBB369FF2BAC65F100888AC2 /* RoleRow.swift in Sources */,

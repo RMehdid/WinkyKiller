@@ -19,7 +19,7 @@ struct RoleRow: View {
     
     var body: some View {
         HStack(spacing: 16){
-            Image(role.value)
+            Image(role.rawValue)
                 .resizable()
                 .scaledToFit()
                 .padding(4)
@@ -39,7 +39,7 @@ struct RoleRow: View {
                 }
             
             VStack(alignment: .leading, spacing: 8){
-                Text(role.value)
+                Text(role.rawValue)
                     .font(.custom("Amarante-Regular", size: 32))
                     .foregroundStyle(.white)
                 
@@ -67,5 +67,5 @@ struct RoleRow: View {
 }
 
 #Preview {
-    RoleRow(Required.killer, playerNo: 2)
+    RoleRow(.killer, playerNo: 2)
 }
